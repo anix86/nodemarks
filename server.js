@@ -3,7 +3,7 @@ var express = require('express');
 var url = require('url');
 var request = require('request');
 var mongo = require('mongoskin');
-var conn = mongo.db('testuser:pass123@staff.mongohq.com:10011/anix-test');
+var conn = mongo.db('user:pass@staff.mongohq.com:10011/mongo-collectionname');
 var cheerio = require('cheerio');
 
 var app =  module.exports = express();
