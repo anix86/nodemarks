@@ -9,4 +9,4 @@
   
 Features
   * Store bookmarks.
-  * Featuch the title and discription of the URL you want to bookmark.
+  * Lookup the title and discription of the URL you want to bookmark.
