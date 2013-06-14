@@ -1,0 +1,27 @@
+doctype 5
+html(lang="en")
+  head
+    title= title
+    script(type='text/javascript')
+      if (foo) {
+         bar()
+      }
+    style
+     label {color:#aaa;}
+  body
+    h1= title 
+    #container
+        form(name="bookmark", action="./save", method="post")
+          label URL:
+          #url
+            input(type="text", name="url")          
+          label Title:
+          #title
+            input(type="text", name="title")          
+          label Description:          
+          #description
+            textarea( name="description")
+          #submit
+            input(type="submit", value="Submit")
+            
+     

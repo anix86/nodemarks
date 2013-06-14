@@ -1,0 +1,55 @@
+.node{ 
+
+	margin:10px;	
+	padding:2px;
+}
+.node .thumbnil{
+	float:left;
+	width:80px;
+	height:80px;
+	margin:3px;
+	background:#555;
+}
+.node .nodemark{
+   min-height:80px;
+   margin:5px;
+}
+#main-header{
+	text-align:center;
+}
+
+#gurl{
+	font-size:14pt;
+	height:28px;
+	width:500px
+}
+#captureurl{
+	padding:5px;
+}
+#btngo{
+	margin:5px;
+}
+#showDetails{
+	display:none;
+}
+
+#showDetails label{
+ margin-top:10px;
+ font-size:14pt;
+ font-weight:bold;
+}
+#title{
+	font-size:14pt;
+	height:28px;
+	width:500px
+}
+#desc{
+	font-size:14pt;
+	height:70px;
+	width:500px
+}
+#category{
+	font-size:14pt;
+	height:28px;
+	width:500px
+}

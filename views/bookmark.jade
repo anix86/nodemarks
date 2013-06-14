@@ -1,0 +1,43 @@
+doctype 5
+html(lang="en")
+ head
+   title #{title}
+   include misc
+
+ body
+   div.navbar.navbar-fixed-top
+    div.navbar-inner
+      div.container 
+        a(href='#').brand \{nodemarks\}	  
+        ul.nav
+          li.active 
+            a(href='#') Home
+          li  
+            a(href='#') About
+          li  
+            a(href='#') Contact
+
+   div.container
+        div.content
+          div.page-header           
+           div.input-append#captureurl
+            form(name="bookmark", action="./save", method="post")
+             h2
+              {URL}
+              |<br>			  
+              input(type="text", name="url", id="gurl", class="input-xlarge", placeholder="Enter Your URL Here") 	  
+              input(type="button", class="btn-large btn-primary", id="btngo", value="Next")
+              div#showDetails
+                 label {Title}     
+                 input(type="text", name="title", id="title")          
+                 label {Description}         
+                 textarea( name="description", id="desc")
+                 label {Category}
+                 input(type="text", name="category", id="category") 
+                 |<br>			  
+                 input(type="submit", class="btn-large btn-primary", value="Submit")
+           
+
+         footer
+          p &copy; Company 2011
+

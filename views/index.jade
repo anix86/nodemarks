@@ -1,0 +1,39 @@
+doctype 5
+html(lang="en")
+ head
+   title #{title}
+   include misc
+
+ body
+   div.navbar.navbar-fixed-top
+    div.navbar-inner
+      div.container 
+        a(href='#').brand {nodemarks}	  
+        ul.nav
+          li.active 
+            a(href='#') Home
+          li  
+            a(href='#') About
+          li  
+            a(href='#') Contact
+
+   div.container
+        div.content
+           div.page-header#main-header
+            div#sharelink
+              |<button type="button" id="submit_links" class="btn btn-large btn-primary">Share a Node -></button>
+           div.row-fluid 
+               div.span8                  
+                  for item in items
+                   div.node
+                    div.nodemark
+                     h3
+                      a(href='/show/#{item.title}') #{item.title}
+                     p= item.description
+                     span Category: #{item.category}   
+               div.span4
+                 h3 Secondary content
+
+         footer
+          p &copy; Nodemarks 2011
+

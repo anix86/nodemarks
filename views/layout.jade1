@@ -1,0 +1,14 @@
+doctype 5
+html(lang="en")
+  head
+    title= title
+    script(type='text/javascript')
+      if (foo) {
+         bar()
+      }
+  body
+    h1= item[0].title
+    #container      
+        p= item[0].description
+        a(href=item[0].url) URL: #{item[0].url}
+     

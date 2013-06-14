@@ -1,0 +1,38 @@
+doctype 5
+html(lang="en")
+ head
+   title= title
+   include misc
+
+ body
+   div.topbar
+    div.fill
+      div.container
+        a(href='#').brand #{title}
+        ul.nav
+          li.active 
+            a(href='#') Home
+          li  
+            a(href='#') About
+          li  
+            a(href='#') Contact
+
+       div.container
+         div.content
+           div.page-header
+            h1 #{title} 
+            small text
+            div.row
+              div.span10
+                  h1 Bookmarks   
+                  for item in items
+                    h1= item.title    
+                    p= item["_id"]
+                    p= item.description
+                    a(href=item.url) URL: #{item.url}   
+              div.span4
+                 h3 Secondary content
+
+   footer
+    p &copy; Company 2011
+
