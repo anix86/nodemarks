@@ -207,6 +207,10 @@ app.get('/geturldetails1', function(req, res){
 			res.end(j);
 });
 
+app.get('/testme', function(req, res)){
+  res.writeHead(200, {'content-type': 'application/json'});
+  res.end();
+}
 
 
 app.listen(process.env.VCAP_APP_PORT || 3000);
